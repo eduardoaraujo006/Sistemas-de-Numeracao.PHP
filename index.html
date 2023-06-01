@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="css/estilosys.css"/>
+    <meta charset="UTF-8"/>
+    <title>Sistema de Numeração</title>
+</head>
+<body>
+<div>
+    <form method="post" action="RegistroBin.php">
+
+        
+        Escolha a para qual opção converter:
+        <br>
+        <label>
+            <input type="radio" name="sys" value="B" checked>Binário
+        </label>
+
+        <label>
+            <input type="radio" name="sys" value="O">Octal
+        </label>
+
+        <label>
+            <input type="radio" name="sys" value="H">Hexadecimal
+        </label>
+        <br><br>
+            
+        Digite o número a ser convertido: 
+        <br>
+            <input type="int" name="converter"/>
+            <button type="submit" name="bnt">Calcular</button>
+
+    </form>
+</div>
+</body>
+</html> 
