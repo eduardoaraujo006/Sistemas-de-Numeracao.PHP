@@ -20,7 +20,7 @@
 
             switch ($sys){
 
-                #LAÇO CHECKBOX
+                #LAÇO CHECKBOX B
                 case 'B':
 
                     #LAÇO BINÁRIO
@@ -29,15 +29,25 @@
                         case '1': print_r (f_bindec_excep1()); break;
                         default:  print_r (f_bindec($converter));
                     }break;
+
+                #LAÇO CHECKBOX O
                 case 'O': 
 
                     #LAÇO OCTAL
-                    echo 'teste octal'; break;
-
+                    switch ($converter) {
+                        case '0': print_r (f_binoct_excep0()); break;
+                        case '1': print_r (f_binoct_excep1()); break;
+                        default:  print_r (f_binoct($converter));
+                    }break;
                     
+                #LAÇO CHECKBOX H
                 case 'H'; 
                     #LAÇO HEXADECIMAL
-                    echo 'teste hexadecimal'; break;
+                    switch ($converter) {
+                        case '0': print_r (f_binhexa_excep0()); break;
+                        case '1': print_r (f_binhexa_excep1()); break;
+                        default:  print_r (f_binhexa($converter));
+                    }break;
             }
         }
     }
