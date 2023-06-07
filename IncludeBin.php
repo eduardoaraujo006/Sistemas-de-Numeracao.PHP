@@ -118,5 +118,4 @@ function f_binhexa($converter){
         $contador = ++$contador;
     }
 }
-
 ?>
